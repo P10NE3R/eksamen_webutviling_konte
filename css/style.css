@@ -1,13 +1,30 @@
 *{
     font-family: "Montserrat", Helvetica, sans-serif;
     
+    a{
+        text-decoration: none;
+        
+    }
+    
+    
 }
+body, main,html{
+    padding:0px;
+    margin: 0px;
+    border:0px
+}
+
+
+
+
+
 
 footer{
    background-color: #252525;
    color:white;
    display: flex;
    flex-wrap: wrap;
+   width: 100%;
 
    a{
     color: white;
@@ -20,10 +37,40 @@ footer{
     }
 
     #sosiale_medier, #betalingsmetoder{
+        width: 100%;
         ul{
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+        
     }
+}
+
+    #land{
+        min-width: 100%;
+        
+        img{
+            width: 3rem;
+            
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            
+            li{
+                display: flex;
+                align-items: center;
+            }
+
+         
+        
+        }
     }
+
+
+
+
+    
 }
