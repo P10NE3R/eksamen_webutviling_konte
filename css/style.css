@@ -1,0 +1,29 @@
+*{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    
+}
+
+footer{
+   background-color: #252525;
+   color:white;
+   display: flex;
+   flex-wrap: wrap;
+
+   a{
+    color: white;
+   }
+
+
+
+    ul{
+        list-style: none;
+    }
+
+    #sosiale_medier, #betalingsmetoder{
+        ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    }
+}
