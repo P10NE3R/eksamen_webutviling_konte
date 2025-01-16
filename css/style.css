@@ -183,6 +183,12 @@ footer{
             border-radius: 5px;
             box-shadow:#e8e8e8 0px 3px 8px;
 
+            
+            ul{
+                list-style:none;
+                display: flex;
+            }
+            
             form{
                 
             
