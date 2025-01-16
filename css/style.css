@@ -162,6 +162,57 @@ footer{
 
 #forside{
     margin: 2rem;
+   
+    #kampanje{
+        display: flex;
+        flex-wrap: wrap;
+        
+        align-content: center;
+        
+        
+        background-image: url('../bilder/holiday-2733322_1280.jpg');
+        background-size:500px 320px ;
+        background-repeat: no-repeat;
+        height: 20rem;
+        border-radius: 10px;
+        margin:block;
+
+        ul{
+            background-color:#1ca2c1;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            text-align: left;
+            width: 80%;
+            height: 55%;
+            
+            list-style: none;
+
+            
+                #kampanje_pris{
+                    font-size: xx-large;
+                    font-weight: 1000;
+                }
+            
+
+
+        }
+
+        a{
+            color: black;
+            background-color: #ffcf40;
+            border-radius: 5px;
+            font-size: medium;
+            font-weight: 1000;
+            padding: 0.6rem;
+            margin-left: 17.3rem;
+            
+        }
+    }
+
+
     
     article{
         padding-bottom:1rem;
