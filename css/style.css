@@ -3,6 +3,7 @@
     
     a{
         text-decoration: none;
+        color: black;
         
     }
     
@@ -14,6 +15,39 @@ body, main,html{
     border:0px
 }
 
+header{
+   
+    
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        img{
+        width: 5rem;
+        }
+        gap: 2rem;
+        
+
+        ul{
+            display: flex;
+            list-style:none;
+            gap: 1rem;
+            
+            li{
+                font-size: x-large;
+                a{
+                    font-size:x-large ;
+                }
+            }
+
+
+        }
+        
+        
+    }
+}
 
 
 
