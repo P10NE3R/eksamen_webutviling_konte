@@ -167,3 +167,21 @@ footer{
 
     
 }
+
+#forside{
+    margin: 2rem;
+    article{
+       
+        max-width: 100%;
+        border-radius: 10px;
+
+
+        img{
+            max-width: 100%;
+            
+        }
+    }
+
+
+
+}
