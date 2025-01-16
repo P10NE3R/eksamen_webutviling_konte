@@ -162,7 +162,60 @@ footer{
 
 #forside{
     margin: 2rem;
-   
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+        
+
+        #banner{
+           
+          
+        }
+
+        #search_form{
+            grid-row: 2/4;
+            margin:1rem ;
+            
+            background-color: white;
+            border-radius: 5px;
+            box-shadow:#e8e8e8 0px 3px 8px;
+
+            form{
+                
+            
+
+                select, input{
+                    height: 2.5rem;
+                    background-color: white;
+                    border:1px solid gray;
+                    
+                }
+                
+                
+    
+                #reise_til,#reise_fra, #antall_reisende{
+                    width: 100%;
+                    height: 2rem;
+                    background-color: white;
+                    border:1px solid gray;
+                }
+    
+                #sok{
+                    background-color: #ffcf40;
+                    border: none;
+                    border-radius: 5px;
+                   
+                }
+        
+            }   
+        }
+        
+    }
+
+
     #kampanje{
         display: flex;
         flex-wrap: wrap;

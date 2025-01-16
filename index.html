@@ -43,13 +43,87 @@
             </section>
             
 
-            <form>
-                <label for="reise_fra">Fra</label>
-                <input type="text" id="reise_fra" name="reise_fra" placeholder="Oslo Lufthavn">
-                <label for="reise_til">Til</label>
-                <input type="text" id="reise_til" name="reise_til" placeholder="Alabania">
-                
-            </form>
+            <section id="search_form">
+                <ul>
+                    <li>
+                        <a href="#searc_form"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a>
+                    </li>
+                    
+                    <li>
+                        <a 
+                            href="https://www.norwegian.no/" target="_blank">
+                            <i 
+                                class="fa-solid fa-plane">
+                            </i>Fly
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
+                    </li>
+                    
+                </ul>
+
+                <form action="#" method ="get">
+                    <label for="reise_fra">Fra</label>
+                    <select name="reise_fra" id="reise_fra">
+                        <option value="OSL">Oslo Lufthavn</option>
+                        <option value="TRF">Torp Sandefjord Lufthavn</option>
+                        <option value="BGO">Bergen Lufthavn</option>
+                        <option value="ALF">Alta Lufthavn</option>
+                    </select>
+                    
+                    <label for="reise_til">Til</label>
+                    <select id="reise_til">
+                        <option value="albania">Albania</option>
+                        <option value="denmark">Danmark</option>
+                        <option value="finland">Finland</option>
+                        <option value="greece">Hellas</option>
+                    </select>
+                    
+                    
+                    
+                            <label for="reiselengde">Reiselengde</label>
+                       
+                            <select id="reiselengde">
+                                <option value="under 1">Mindre enn 1 uke</option>
+                                <option value="1">1 Uke</option>
+                                <option value="2">2 Uker</option>
+                                <option value="mer enn 2">Mer enn 2 uker</option>
+                            </select>
+    
+                       
+                            <label for="dato">Velg dato</label>
+                       
+                            <input type="date" id="dato" name="dato">
+                      
+                    
+                    
+                    <label for="reiselengde">Reiselengde</label>
+                    <select id="reiselengde">
+                        <option value="under 1">Mindre enn 1 uke</option>
+                        <option value="1">1 Uke</option>
+                        <option value="2">2 Uker</option>
+                        <option value="mer enn 2">Mer enn 2 uker</option>
+                    </select>
+                    <label for="dato">Velg dato</label>
+                    <input type="date" id="dato" name="dato">
+                    <label for="antall_reisende">Antall reisende</label>
+                    <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
+    
+                    <label for="sok">Søk</label>
+                    <input type="submit" value="submit" id="sok">
+    
+                    
+    
+                </form>
+            </section>
+
+            
 
 
 
@@ -98,7 +172,7 @@
             </article>
 
             
-            <article>
+            <article id="storby">
                 <img src="bilder/cathedral-427997_640.jpg" alt="bilde av barcelona med sagrada família kirken i bakgrunn">
                 <h3>Storbyferie</h3>
                 <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nye utvalgte hotell.</p>
@@ -113,7 +187,7 @@
             </article>
 
 
-            <article>
+            <article id="ski">
                 
                 <img src="bilder/ski-slope-3223709_640.jpg" alt="bilde av person som kjører slalom med skiheiser i bakgrunnen">
                 <h4>Nyhet</h4>
