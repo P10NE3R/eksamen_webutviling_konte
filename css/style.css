@@ -163,7 +163,7 @@ footer{
 
 
 #forside {
-    
+    margin-bottom: 2rem;
  
     header{
         
@@ -187,7 +187,41 @@ footer{
         }
 
         #search_form{
-            
+            max-width:400px;
+            display: flex;
+            flex-wrap: wrap;
+            .scroll-container{
+                
+                display: flex;
+                overflow: scroll;
+                ul{
+                    display: flex;
+                    gap:1rem;
+                    
+                   
+                    #fly_og_hotell{
+                        min-width: 7rem;
+                        a{
+                            box-shadow:#1ca2c1 0px 3px 0px;
+                        }
+                    
+                    #kombinasjonsreiser{
+                        min-width: 13rem;
+                    }
+                       
+                    }
+                    li{
+                        display: flex;
+                        display: inline;
+                        width:fit-content ;
+                        min-width: 5rem;
+                   
+                    }
+                    
+                }
+            }
+
+
             grid-row-start: 1;
             grid-row-end:5 ;
 
@@ -207,14 +241,13 @@ footer{
             }
             
             form{
-               margin: 1rem; 
-            
-
+               margin: 0 1rem 1rem; 
+               
                 select, input{
                     height: 2.5rem;
                     background-color: white;
                     border:1px solid gray;
-                    
+                    margin-bottom:1rem ;
                 }
                 
                 
@@ -225,7 +258,7 @@ footer{
                     background-color: white;
                     border:1px solid gray;
                 }
-    
+                
                 #sok{
                     background-color: #ffcf40;
                     border: none;
@@ -245,6 +278,7 @@ footer{
 
 
     #kampanje{
+        margin-bottom: 2rem;
         display: flex;
         flex-wrap: wrap;
         
@@ -293,6 +327,53 @@ footer{
         }
     }
 
+
+    
+
+   
+       
+    #tilbud{
+        margin-bottom: 2rem;
+        display: flex;
+       
+        height: 12rem;
+        
+        position: relative;
+        gap: 1rem;
+        
+
+        .scroll-container{
+            display: flex;
+            overflow: scroll;
+            gap: 2rem;
+           
+
+            article{
+                padding: 1rem;
+                padding-left:3rem;
+                height: 8rem;
+                
+                border-radius: 10px;
+                border:1px #e8e8e8;
+                box-shadow:#e8e8e8 0px 3px 8px;
+                min-width: 21rem;
+                align-content: center;
+
+                a{
+                    color:#1ca2c1;
+                }
+            }
+
+        }
+
+
+    }
+       
+
+
+
+    }
+
 #tips_og_inspirasjon{
     margin: 1.5rem;
     article{
@@ -339,4 +420,3 @@ footer{
 
 
 
-}

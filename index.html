@@ -43,30 +43,31 @@
             
 
             <section id="search_form">
-                <ul>
-                    <li>
-                        <a href="#searc_form"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a>
-                    </li>
-                    
-                    <li>
-                        <a 
-                            href="https://www.norwegian.no/" target="_blank">
-                            <i 
-                                class="fa-solid fa-plane">
-                            </i>Fly
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
-                    </li>
-                    
-                </ul>
-
+                <div class="scroll-container">
+                    <ul>
+                        <li id="fly_og_hotell">
+                            <a href="#searc_form"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a>
+                        </li>
+                        
+                        <li >
+                            <a 
+                                href="https://www.norwegian.no/" target="_blank">
+                                <i 
+                                    class="fa-solid fa-plane">
+                                </i> Fly
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
+                        </li>
+                        
+                        <li i="kombinasjonsreiser">
+                            <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
+                        </li>
+                        
+                    </ul>
+                </div>
                 <form action="#" method ="GET">
                     <label for="reise_fra">Fra</label>
                     <select name="reise_fra" id="reise_fra">
@@ -103,7 +104,7 @@
                     <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
     
                     
-                    <button aria-label="søk" type="submit" id ="sok">Søk</button>
+                    <button aria-label="søk på reise" type="submit" id ="sok">Søk</button>
                     
     
                 </form>
@@ -133,7 +134,32 @@
            <a href="order.html">Bestill i dag</a>
         </section>
         
-        
+        <section id="tilbud">
+            <div class=scroll-container>
+                    
+                    <article >
+                        <h3>
+                            Få eksklusive tilbud
+                        </h3>
+                        <a href="order.html">Logg inn/opprett konto og få rabattkoder <i class="fas fa-angle-double-right"></i></a>
+                    </article>
+
+                    <article >
+                        <h3>
+                            Billige resteplasser
+                        </h3>
+                        <a href="order.html">Opp til 50% rabatt <i class="fas fa-angle-double-right"></i></a>
+                    </article>
+
+
+                    <article >
+                        <h3>
+                            Mars - spar opptil 5000,-
+                        </h3>
+                        <a href="order.html">Sikre deg et feriekupp <i class="fas fa-angle-double-right"></i></a>
+                    </article>
+            </div>
+        </section>
         
         
         
