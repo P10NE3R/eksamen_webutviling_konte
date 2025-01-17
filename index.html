@@ -39,7 +39,6 @@
     <main id="forside">
         <header>
             <section id="banner">
-                <img src="background-image: url(../bilder/sea-4768869_1920.jpg" alt="">
             </section>
             
 
@@ -68,7 +67,7 @@
                     
                 </ul>
 
-                <form action="#" method ="get">
+                <form action="#" method ="GET">
                     <label for="reise_fra">Fra</label>
                     <select name="reise_fra" id="reise_fra">
                         <option value="OSL">Oslo Lufthavn</option>
@@ -87,19 +86,7 @@
                     
                     
                     
-                            <label for="reiselengde">Reiselengde</label>
-                       
-                            <select id="reiselengde">
-                                <option value="under 1">Mindre enn 1 uke</option>
-                                <option value="1">1 Uke</option>
-                                <option value="2">2 Uker</option>
-                                <option value="mer enn 2">Mer enn 2 uker</option>
-                            </select>
-    
-                       
-                            <label for="dato">Velg dato</label>
-                       
-                            <input type="date" id="dato" name="dato">
+                            
                       
                     
                     
@@ -115,9 +102,8 @@
                     <label for="antall_reisende">Antall reisende</label>
                     <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
     
-                    <label for="sok">Søk</label>
-                    <input type="submit" value="submit" id="sok">
-    
+                    
+                    <button aria-label="søk" type="submit" id ="sok">Søk</button>
                     
     
                 </form>

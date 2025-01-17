@@ -160,29 +160,44 @@ footer{
     
 }
 
-#forside{
-    margin: 2rem;
 
+
+#forside {
+    
+ 
     header{
+        
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        max-width: 1000px;
         
         
 
         #banner{
-            grid-row:1/4 ;
-            background-image: url(../bilder/sea-4768869_1920.jpg);
-            width: 100%;
+            
+            grid-row-start: 1;
+            grid-row-end:3 ;
 
+            grid-column-start: 1;
+            grid-column-end:2 ;
+
+            background-image: url("../bilder/sea-4768869_1920.jpg");
+            
         }
 
         #search_form{
-           grid-row: 2/4;
-            margin:1rem ;
             
+            grid-row-start: 1;
+            grid-row-end:5 ;
+
+            grid-column-start: 1;
+            grid-column-end:2 ;
+
+           margin:2.5rem 1.5rem;
+           
             background-color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow:#e8e8e8 0px 3px 8px;
 
             
@@ -192,7 +207,7 @@ footer{
             }
             
             form{
-                
+               margin: 1rem; 
             
 
                 select, input{
@@ -215,8 +230,13 @@ footer{
                     background-color: #ffcf40;
                     border: none;
                     border-radius: 5px;
+                    width: 100%;
+                    font-weight: 1000;
+                    padding: 0.8rem;
+                    
                    
                 }
+                
         
             }   
         }
@@ -273,8 +293,8 @@ footer{
         }
     }
 
-
-    
+#tips_og_inspirasjon{
+    margin: 1.5rem;
     article{
         padding-bottom:1rem;
         box-shadow:#e8e8e8 0px 3px 8px;
@@ -313,6 +333,9 @@ footer{
             border-bottom-right-radius: 20px;
         }
     }
+}
+    
+   
 
 
 
