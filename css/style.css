@@ -163,6 +163,7 @@ footer{
 
 
 #forside {
+    
     margin-bottom: 2rem;
  
     header{
@@ -242,6 +243,15 @@ footer{
             
             form{
                margin: 0 1rem 1rem; 
+
+
+               label{
+                    position: relative;
+                    
+                
+                
+                
+               }
                
                 select, input{
                     height: 2.5rem;
@@ -269,6 +279,7 @@ footer{
                     
                    
                 }
+
                 
         
             }   
@@ -368,54 +379,90 @@ footer{
 
 
     }
-       
-
-
-
-    }
-
-#tips_og_inspirasjon{
-    margin: 1.5rem;
-    article{
-        padding-bottom:1rem;
-        box-shadow:#e8e8e8 0px 3px 8px;
-        
-        border-radius: 10px;
-        margin-bottom: 3rem;
-
-        img{
-            width: 100%;
-            border-top-left-radius:10px;
-            border-top-right-radius:10px;
-        }
-
-        h3,p,a{
-           padding: 0.5rem;
-           margin:0px;
-        }
-
-        a{
-            padding-bottom:0.9rem ;
-            box-shadow: #1ca2c1 0px 3px ;
-            border-bottom-left-radius:2px ;
-        }
-
-        h4{
-            color: #f6f5f2 ;
-            background-color: #1ca2c1 ;
-            width: fit-content;
-            height: auto;
-            padding: 0.8rem;
-            margin:0px;
-            position: relative;
+    
+    #tips_og_inspirasjon{
+        margin: 1.5rem;
+        article{
+            padding-bottom:1rem;
+            box-shadow:#e8e8e8 0px 3px 8px;
             
-            top: -16.8rem;
-            border-top-left-radius: 10px;
-            border-bottom-right-radius: 20px;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+    
+            img{
+                width: 100%;
+                border-top-left-radius:10px;
+                border-top-right-radius:10px;
+            }
+    
+            h3,p,a{
+               padding: 0.5rem;
+               margin:0px;
+            }
+    
+            a{
+                padding-bottom:0.9rem ;
+                box-shadow: #1ca2c1 0px 3px ;
+                border-bottom-left-radius:2px ;
+            }
+    
+            h4{
+                color: #f6f5f2 ;
+                background-color: #1ca2c1 ;
+                width: fit-content;
+                height: auto;
+                padding: 0.8rem;
+                margin:0px;
+                position: relative;
+                
+                top: -16.8rem;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 20px;
+            }
         }
     }
 }
-    
+
+#order{
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            background-color: #1ca2c1;
+            color: #e8e8e8;
+            height: 2rem;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+            justify-content: space-evenly;
+            
+            a{
+                color: #e8e8e8;
+            }
+            i{
+                font-size: xx-large;
+            }
+        }
+
+        
+}
+form{
+            
+    #hovedbestiller{
+        display: flex;
+        flex-wrap: wrap;
+        input{
+            margin-bottom: 1rem;
+            
+            background-color: white;
+            border:1px solid gray;
+           
+        }
+
+    }
+}
+}
+   
    
 
 

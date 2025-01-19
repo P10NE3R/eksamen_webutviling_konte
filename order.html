@@ -1,5 +1,5 @@
 <!Doctype html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,122 @@
     </header>
     
     
-    <main>
+    <main id="order">
+        <nav>
+           
+           <ul>
+             <li><a href="index.html#search_form">Søk</a></li>
+             
+             <li><i class="fa-solid fa-angle-right"></i></li>
+             
+             <li><a href="hotell.html">Søkeresultater</a></li>
+             
+             
+             
+             <li><a href="hotell.html#rom"></a></li>
+             
+             <li><i class="fa-solid fa-angle-right"></i></li>
+             
+             <li><a href=" https://www.norwegian.no/">Fly</a></li>
+             
+             <li><i class="fa-solid fa-angle-right"></i></li>
+             
+             <li><a href="order.html-">OPPLYSNINGER</a></li>
+             
+             <li><i class="fa-solid fa-angle-right"></i></li>
+             
+             <li> <a href="#fullføring">Bestill</a></li>
+
+            
+           </ul>
+           
+           
+           
+           
+            
+            
+           
+           
+
+        </nav>
+        <section>
+            
+            
+            <form>
+                <fieldset id="hovedbestiller">
+                    <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
+                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn" name="fornavn">
+
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="etternavn" name="etternavn">
+
+
+                    <p aria-label="kjønn" >KJØNN</p>
+                    <label for="kvinne">KVINNE</label>
+                    <input type="radio" id="kvinne" name="kjonn">
+                    <label for="mann">MANN</label>
+                    <input type="radio" id="mann" name="kjonn">
+
+                    
+                    <label for="fødselsdato">FØDSELSDATO:</label>
+        
+                    <ul>
+                        <li><input id="fødselsdato" type="number" placeholder="DD"></li>
+                        <li><input type="number" placeholder="MM" name="birth_month"></li>
+                        <li><input type="number" placeholder="ÅÅÅÅ" name="birth_year"></li>
+                    </ul>
+
+                    
+
+
+                    <label for="e-post">E-POSTADRESSE:</label>
+                    <input id="e-post" name="e-post" type="text">
+
+                    <label for="telefonnummer">TELEFONNUMMER:</label>
+                    <input id="telefonnummer" name="telefonnummer" type="number">
+
+                    <label for="postnummer">POSTNUMMER:</label>
+                    <input id="postnummer" name="postnummer" type="number">
+
+                    <label for="poststed">POSTSTED:</label>
+                    <input id="poststed" name="poststed" type="text">
+
+                    <label for="land">LAND</label>
+                    <input id="land" name="land" type="select">
+                    <select>
+                        <option id="norway">Norway</option>
+                    </select>
+
+
+
+
+
+                </fieldset>
+                
+                <fieldset id="person2">
+                    <legend>VOKSEN 18+</legend>
+                    <label for="fornavn_p2">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn_p2" name="fornavn_p2">
+
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="etternavn_p2" name="etternavn_p2">
+
+                    <p aria-label="kjønn paa person 2" >KJØNN</p>
+                    <label for="kvinne_p2">KVINNE</label>
+                    <input type="radio" id="kvinne_p2" name="kjonn_p2">
+                    <label for="mann_p2">MANN</label>
+                    <input type="radio" id="mann_p2" name="kjonn_p2">
+
+                </fieldset>
+        </form>
+
+           
+        </section>
+
+
+
+
 
     </main>
     <footer>
