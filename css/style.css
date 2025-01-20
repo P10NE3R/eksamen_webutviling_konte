@@ -7,6 +7,9 @@
         
     }
     
+    ul{
+        list-style: none;
+    }
     
 }
 body, main,html{
@@ -71,7 +74,7 @@ footer{
         padding: 0px;
     }
 
-    #land{
+    .flagg{
         min-width: 100%;
         
         img{
@@ -447,19 +450,71 @@ footer{
         
 }
 form{
+    
+    font-weight: bold;
+
+    label, p{ 
+        font-size: small;
+    }
+
+    .full_bredde{
+        width: 90%;
+        
+    }
+
+    .valg_av_kjonn{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+
+   
+   
+   
+    .bursdag{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+
+        input{
+            border-radius:5px ;
+            height: 1.5rem;
+       }
+    }
+
+
+    .navn, #adresser{
+        width: 100%;
+        
+
+        input, select{
+            border-radius:5px ;
+            width: 90%;
+            height: 1.5rem;
+            border: 1px;
+           
+    }
+
             
     #hovedbestiller{
         display: flex;
         flex-wrap: wrap;
+        border-radius: 10px;
+       
+       
+    }
         input{
             margin-bottom: 1rem;
-            
             background-color: white;
             border:1px solid gray;
            
         }
 
+
     }
+
+
 }
 }
    

@@ -38,33 +38,29 @@
     
     <main id="order">
         <nav>
-           
-           <ul>
-             <li><a href="index.html#search_form">Søk</a></li>
-             
-             <li><i class="fa-solid fa-angle-right"></i></li>
-             
-             <li><a href="hotell.html">Søkeresultater</a></li>
-             
-             
-             
-             <li><a href="hotell.html#rom"></a></li>
-             
-             <li><i class="fa-solid fa-angle-right"></i></li>
-             
-             <li><a href=" https://www.norwegian.no/">Fly</a></li>
-             
-             <li><i class="fa-solid fa-angle-right"></i></li>
-             
-             <li><a href="order.html-">OPPLYSNINGER</a></li>
-             
-             <li><i class="fa-solid fa-angle-right"></i></li>
-             
-             <li> <a href="#fullføring">Bestill</a></li>
-
-            
-           </ul>
-           
+           <div class="scroll-container">
+            <ul>
+                    <li><a href="index.html#search_form">Søk</a></li>
+                    
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    
+                    <li><a href="hotell.html">Søkeresultater</a></li>
+                    
+                    <li><a href="hotell.html#rom"></a></li>
+                    
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    
+                    <li><a href=" https://www.norwegian.no/">Fly</a></li>
+                    
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    
+                    <li><a href="order.html-">OPPLYSNINGER</a></li>
+                    
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    
+                    <li> <a href="#fullføring">Bestill</a></li>
+            </ul>
+           </div>
            
            
            
@@ -78,50 +74,69 @@
             
             
             <form>
+                <h1>Oppgi dine bestillingsopplysninger</h1>
                 <fieldset id="hovedbestiller">
                     <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
-                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="fornavn" name="fornavn">
-
-                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="etternavn" name="etternavn">
-
-
-                    <p aria-label="kjønn" >KJØNN</p>
-                    <label for="kvinne">KVINNE</label>
-                    <input type="radio" id="kvinne" name="kjonn">
-                    <label for="mann">MANN</label>
-                    <input type="radio" id="mann" name="kjonn">
-
+                    <ul class="navn">
+                        <li> <label for="fornavn">FORNAVN (IFØLGE PASS):</label></li>
+                        <li><input type="text" id="fornavn" name="fornavn" required></li>
+                        <li> <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label></li>
+                        <li> <input type="text" id="etternavn" name="etternavn" required></li>
+                        
+                        
+                    </ul>
                     
-                    <label for="fødselsdato">FØDSELSDATO:</label>
+                    <ul class="valg_av_kjonn">
+                        <li class="full_bredde"><p aria-label="velg kjønn" >KJØNN</p></li>
+                        <li><input type="radio" id="kvinne" name="kjonn"></li>
+                        <li><label for="kvinne">KVINNE</label></li>
+                        <li><input type="radio" id="mann" name="kjonn"></li>
+                        <li><label for="mann">MANN</label></li>
+                    </ul>
+                   
         
-                    <ul>
-                        <li><input id="fødselsdato" type="number" placeholder="DD"></li>
-                        <li><input type="number" placeholder="MM" name="birth_month"></li>
-                        <li><input type="number" placeholder="ÅÅÅÅ" name="birth_year"></li>
+                    <ul class="bursdag">
+                        <li class="full_bredde"><label for="fødselsdato">FØDSELSDATO:</label></li>
+                        <li><input id="fødselsdato" type="number" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag"></li>
+                        <li><input type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned"  required></li>
+                        <li><input type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år" required></li>
                     </ul>
 
                     
+                    <ul id="adresser">
+                        <li> <label for="e-post">E-POSTADRESSE:</label></li>
+                        <li> <input id="e-post" name="e-post" type="text" required></li>
+                        <li><label for="telefonnummer">TELEFONNUMMER:</label></li>
+                        <li><input id="telefonnummer" name="telefonnummer" type="number" required></li>
+                        <li><label for="postnummer">POSTNUMMER:</label></li>
+                        <li><input id="postnummer" name="postnummer" type="number" required></li>
+                        <li> <label for="poststed">POSTSTED:</label></li>
+                        <li><input id="poststed" name="poststed" type="text" required></li>
+                        <li> <label for="land">LAND</label></li>
+                        <li>
+                            <select id="land">
+                                <option value="">Velg et land</option>
+                                <option id="norway" value="norway">Norge</option>
+                                <option id="svreige" value="sweden">Sverige</option>
+                                <option id="danmark" value="denmark">Danmark</option>
+                                <option id="finland" value="finland">Finland|</option>
+                                <option id="nederland" value="netherlands">Netherlands</option>
+                            </select>
+                        </li>
+                    </ul>
 
+                   
+                   
+                    
+                   
+                    
+                    
 
-                    <label for="e-post">E-POSTADRESSE:</label>
-                    <input id="e-post" name="e-post" type="text">
+                   
+                    
 
-                    <label for="telefonnummer">TELEFONNUMMER:</label>
-                    <input id="telefonnummer" name="telefonnummer" type="number">
+                   
 
-                    <label for="postnummer">POSTNUMMER:</label>
-                    <input id="postnummer" name="postnummer" type="number">
-
-                    <label for="poststed">POSTSTED:</label>
-                    <input id="poststed" name="poststed" type="text">
-
-                    <label for="land">LAND</label>
-                    <input id="land" name="land" type="select">
-                    <select>
-                        <option id="norway">Norway</option>
-                    </select>
 
 
 
@@ -137,6 +152,11 @@
                     <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
                     <input type="text" id="etternavn_p2" name="etternavn_p2">
 
+
+                    
+        
+                    
+
                     <p aria-label="kjønn paa person 2" >KJØNN</p>
                     <label for="kvinne_p2">KVINNE</label>
                     <input type="radio" id="kvinne_p2" name="kjonn_p2">
@@ -144,6 +164,8 @@
                     <input type="radio" id="mann_p2" name="kjonn_p2">
 
                 </fieldset>
+
+                <button aria-label="send inn bestilling" type="submit" id ="send_inn">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
         </form>
 
            
@@ -156,7 +178,7 @@
     </main>
     <footer>
        
-        <section id="land">
+        <section class="flagg">
             <ul>
                 <li><img src="flagg/sweden.png" alt="svensk flagg"></li>
                 <li>Sverige</li>
