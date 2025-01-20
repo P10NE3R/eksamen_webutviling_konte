@@ -450,7 +450,15 @@ footer{
         
 }
 form{
-    
+
+
+    fieldset{
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+
+
     font-weight: bold;
 
     label, p{ 

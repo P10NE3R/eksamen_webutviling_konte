@@ -87,7 +87,7 @@
                     </ul>
                     
                     <ul class="valg_av_kjonn">
-                        <li class="full_bredde"><p aria-label="velg kjønn" >KJØNN</p></li>
+                        <li class="full_bredde"><p>KJØNN</p></li>
                         <li><input type="radio" id="kvinne" name="kjonn"></li>
                         <li><label for="kvinne">KVINNE</label></li>
                         <li><input type="radio" id="mann" name="kjonn"></li>
@@ -96,10 +96,10 @@
                    
         
                     <ul class="bursdag">
-                        <li class="full_bredde"><label for="fødselsdato">FØDSELSDATO:</label></li>
-                        <li><input id="fødselsdato" type="number" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag"></li>
-                        <li><input type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned"  required></li>
-                        <li><input type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år" required></li>
+                        <li class="full_bredde"><label for="birth_date_p1">FØDSELSDATO:</label></li>
+                        <li><input id="birth_date_p1" type="number" name="birth_date" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag"></li>
+                        <li><input id="birth_month_p1" type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned"  required></li>
+                        <li><input id="birth_year_p1" type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år" required></li>
                     </ul>
 
                     
@@ -114,7 +114,7 @@
                         <li><input id="poststed" name="poststed" type="text" required></li>
                         <li> <label for="land">LAND</label></li>
                         <li>
-                            <select id="land">
+                            <select id="land" required>
                                 <option value="">Velg et land</option>
                                 <option id="norway" value="norway">Norge</option>
                                 <option id="svreige" value="sweden">Sverige</option>
@@ -127,23 +127,15 @@
 
                    
                    
-                    
-                   
-                    
-                    
-
-                   
-                    
-
-                   
-
-
-
-
-
+            
 
                 </fieldset>
+
                 
+
+
+
+
                 <fieldset id="person2">
                     <legend>VOKSEN 18+</legend>
                     <label for="fornavn_p2">FORNAVN (IFØLGE PASS):</label>
