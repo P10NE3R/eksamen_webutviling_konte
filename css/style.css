@@ -449,12 +449,86 @@ footer{
 
         
 }
-form{
 
+
+#valg{
+    summary{
+        display: block;
+        
+        
+      }
+   
+
+      article{
+        padding-bottom:1rem;
+        box-shadow:0 1px 1px #e8e8e8;
+        margin: 1rem;
+        border: 1px #f6f5f2;
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+            max-width: 100%;
+        }
+    
+        #valg_info{
+            color:rgb(82, 82, 82);
+            padding-bottom:1rem;
+            border-bottom: 1px solid #e8e8e8;
+            margin: 0.5rem;
+            padding-left: 0px;
+            
+            
+            
+            li{
+                #valg_rating{
+                    color: #ffcf40;
+                    display: flex;
+                    gap:0.3rem;
+                    padding-left: 0px;
+                   
+                 }
+
+
+
+            }
+
+           
+        
+        
+        }
+        #valg_pris{
+            padding-left: 0px;
+            margin: 0.5rem;
+        }
+
+
+
+    }
+
+    
+
+
+    
+
+
+
+    
+      
+}
+
+
+
+
+
+form{
+    
 
     fieldset{
         border-radius: 10px;
         margin-bottom: 1rem;
+        background-color: #f6f5f2;
+        
+        
     }
 
 
@@ -487,20 +561,32 @@ form{
 
         input{
             border-radius:5px ;
-            height: 1.5rem;
+            height: 2rem;
+            border: none;
+            background-color: white;
+            box-shadow:#e8e8e8 0px 2px 2px;
        }
     }
 
 
     .navn, #adresser{
         width: 100%;
+       
+       
         
+        li{
+            input, #land{
+                border-radius:5px ;
+               
+                width: 90%;
+                height: 1rem;
+                border: none;
+                background-color: white;
+                box-shadow:#e8e8e8 0px 2px 2px;
+                
 
-        input, select{
-            border-radius:5px ;
-            width: 90%;
-            height: 1.5rem;
-            border: 1px;
+        }
+        
            
     }
 
@@ -510,7 +596,7 @@ form{
         flex-wrap: wrap;
         border-radius: 10px;
        
-       
+    
     }
         input{
             margin-bottom: 1rem;
@@ -519,6 +605,17 @@ form{
            
         }
 
+
+    }
+
+    #send_inn{
+        background-color:#ffcf40;
+        border: none;
+        border-radius: 5px;
+        height: 2.5rem;
+        padding: 0 0.8rem 0 0.8rem;
+        
+        font-weight: bold;
 
     }
 

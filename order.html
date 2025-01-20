@@ -58,7 +58,7 @@
                     
                     <li><i class="fa-solid fa-angle-right"></i></li>
                     
-                    <li> <a href="#fullføring">Bestill</a></li>
+                    <li> <a href="#send_inn">Bestill</a></li>
             </ul>
            </div>
            
@@ -70,6 +70,52 @@
            
 
         </nav>
+        <section id="valg">
+            
+    
+
+             <details>
+                <summary><h2>Dine valg <i class="fa-solid fa-angle-right"></i></h2></summary>
+                <article>
+                    
+                    <img src="bilder/landscape-2016308_640.jpg" alt="bilde av en solseng på en terasse med utsikt over et baseng og havet">
+                    
+                    <ul id="valg_info">
+                        <li><i class="fa-solid fa-location-dot"></i> Parga Beach</li>
+                       
+                        <li>
+                            <ul id="valg_rating">
+                                
+                                <li><i class="fa-solid fa-sun"></i></li>
+                                <li><i class="fa-solid fa-sun"></i></li>
+                                <li><i class="fa-solid fa-sun"></i></li>
+                                <li><i class="fa-solid fa-sun"></i></li>
+                                <li><i class="fa-regular fa-sun"></i></li>
+                               
+                                
+                            </ul>
+                        </li>
+
+                        <li><i class="fa-regular fa-calendar"></i> Man 5 main - man 12 mai 2025</li>
+                        <li><i class="fa-regular fa-user"></i> 2 Voksene</li>
+                        <li><i class="fa-solid fa-bed"></i> Deluxrom, Balkong og ikke spesifisert utsikt.</li>
+                        <li><i class="fa-solid fa-utensils"></i> Frokost Buffe</li>
+                        <li><i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn - Preveza</li>
+                    </ul>
+                    
+                    <ul id="valg_pris">
+                        <li><span style="text-decoration:line-through;">22 003,-</span></li>
+                        <li><span style="color: red; font-weight:bold; font-size: x-large;">19 803,-</span></li>
+                    </ul>
+                   
+                </article>
+            
+            
+            </details>
+        </section >
+           
+        
+        
         <section>
             
             
@@ -138,23 +184,30 @@
 
                 <fieldset id="person2">
                     <legend>VOKSEN 18+</legend>
-                    <label for="fornavn_p2">FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="fornavn_p2" name="fornavn_p2">
-
-                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="etternavn_p2" name="etternavn_p2">
-
-
+                    <ul class="navn">
+                        <li> <label for="fornavn_p2">FORNAVN (IFØLGE PASS):</label></li>
+                        <li><input type="text" id="fornavn_p2" name="fornavn" required></li>
+                        <li> <label for="etternavn_p2">ETTERNAVN (IFØLGE PASS):</label></li>
+                        <li> <input type="text" id="etternavn_p2" name="etternavn" required></li>
+                        
+                        
+                    </ul>
                     
+                    <ul class="valg_av_kjonn">
+                        <li class="full_bredde"><p>KJØNN</p></li>
+                        <li><input type="radio" id="kvinne_p2" name="kjonn_p2"></li>
+                        <li><label for="kvinne_p2">KVINNE</label></li>
+                        <li><input type="radio" id="mann_p2" name="kjonn_p2"></li>
+                        <li><label for="mann_p2">MANN</label></li>
+                    </ul>
+                   
         
-                    
-
-                    <p aria-label="kjønn paa person 2" >KJØNN</p>
-                    <label for="kvinne_p2">KVINNE</label>
-                    <input type="radio" id="kvinne_p2" name="kjonn_p2">
-                    <label for="mann_p2">MANN</label>
-                    <input type="radio" id="mann_p2" name="kjonn_p2">
-
+                    <ul class="bursdag">
+                        <li class="full_bredde"><label for="birth_date_p2">FØDSELSDATO:</label></li>
+                        <li><input id="birth_date_p2" type="number" name="birth_date_p2" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag persom 2"></li>
+                        <li><input id="birth_month_p2" type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned person 2"  required></li>
+                        <li><input id="birth_year_p2" type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år person 2" required></li>
+                    </ul>
                 </fieldset>
 
                 <button aria-label="send inn bestilling" type="submit" id ="send_inn">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
