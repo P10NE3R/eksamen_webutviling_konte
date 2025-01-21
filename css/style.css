@@ -32,6 +32,9 @@ body, main,html{
         }
         gap: 2rem;
         
+        #tips_hotell_fly{
+            display: none;
+        }  
 
         ul{
             display: flex;
@@ -47,7 +50,7 @@ body, main,html{
 
 
         }
-        
+            
         
     }
 }
@@ -259,7 +262,7 @@ footer{
                 select, input{
                     height: 2.5rem;
                     background-color: white;
-                    border:1px solid gray;
+                    border:1px solid #e8e8e8;
                     margin-bottom:1rem ;
                 }
                 
@@ -269,7 +272,7 @@ footer{
                     width: 100%;
                     height: 2rem;
                     background-color: white;
-                    border:1px solid gray;
+                    border:1px solid #e8e8e8;
                 }
                 
                 #sok{
@@ -426,9 +429,25 @@ footer{
     }
 }
 
+
+    
+
+
+
 #order{
     nav{
+        
+
+
+        .scroll-container{
+
+            display: flex;
+            overflow: scroll;
+           
+        
+
         ul{
+            gap:1rem;
             list-style: none;
             display: flex;
             align-items: center;
@@ -439,22 +458,42 @@ footer{
             border-bottom-right-radius:10px;
             justify-content: space-evenly;
             
-            a{
-                color: #e8e8e8;
+            li{
+
+                a{
+                    color: #e8e8e8;
+                }
+                i{
+                    font-size: xx-large;
+                }
+
+                #opplysninger{
+                    font-weight: bolder;
+                }
+                
             }
-            i{
-                font-size: xx-large;
-            }
+
+           
         }
 
         
 }
-
+    }
 
 #valg{
+    
+    details{
+        border-radius: 10px;
+        border: 5px #e8e8e8;
+        box-shadow:1px 1px 1px 1px #e8e8e8;
+        
+        
+    }
+    
+    
     summary{
         display: block;
-        
+        align-items: center;
         
       }
    
@@ -479,7 +518,9 @@ footer{
             
             
             
+            
             li{
+                margin-bottom: 0.5rem;
                 #valg_rating{
                     color: #ffcf40;
                     display: flex;
@@ -579,7 +620,7 @@ form{
                 border-radius:5px ;
                
                 width: 90%;
-                height: 1rem;
+                height: 2rem;
                 border: none;
                 background-color: white;
                 box-shadow:#e8e8e8 0px 2px 2px;
@@ -601,7 +642,7 @@ form{
         input{
             margin-bottom: 1rem;
             background-color: white;
-            border:1px solid gray;
+            border:1px solid #e8e8e8
            
         }
 
@@ -624,6 +665,186 @@ form{
 }
    
    
+#hotell{
+    
+    #hotell_bilder{
+        max-height:500px;
+        .scroll-container{
+            
+            display: flex;
+            overflow: scroll;
+            
+            
+            img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    nav{
+        ul{
+            border-bottom: 2px solid #e8e8e8;
+
+            display: flex;
+            gap:1rem;
+            li{
+                padding:0.5rem;
+            }
+            
+        }
+    
+    
+        #oversikt_lenke{
+            color:#1ca2c1;
+            
+           
+            border-bottom: 2px solid #1ca2c1;
+            padding: 0.5rem;
+            
+           a{
+            color: #1ca2c1;
+            font-weight: bold
+           }
+
+        }
+    }
+
+    
+    #oversikt{
+
+        a{
+            color: #52d3f0;
+            font-weight: 600;
+                        
+        }
+        #rating_oversikt
+                {
+                    display: flex;
+                    li{
+                        color: #ffcf40;
+                    }
+                
+                }
+
+                ul{
+                    
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding-left:0rem;
+                    font-weight: bold;
+                    .anmeldelse{
+                        background-color:#019101;
+                        border-radius: 10px;
+                        padding: 0.3rem;
+                        
+                        
+                        color:#f6f5f2;
+                    }
+                }
+
+
+    }
+
+
+    #fasiliteter{
+        
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5rem;
+            line-height: 2rem;
+            li{
+                width: 49%;
+            }
+
+
+        }
+        
+        a{
+            color: #52d3f0;
+            font-weight: 600;
+           }
+
+
+    }
+
+    #tilgjengelige_rom{
+        border-radius: 10px;
+        border:1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+
+        ul{
+            padding-left: 0rem;
+        }
+
+
+
+        
+        article{
+            
+            width: 45%;
+            border-radius: 10px;
+            border:1px solid black;
+
+            .info{
+                font-size: small;
+                font-weight: normal;
+                
+                li{
+                  
+                    
+                    i{
+                        font-size:5px;
+                        padding-bottom: 0.4rem;
+                    }
+
+
+                }
+                
+            }
+            
+
+
+            img{
+                
+                max-width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                gap:0.5rem;
+                padding-left: 0rem;
+                font-weight: bold;
+                
+                .anmeldelse{
+                    background-color:#019101;
+                    border-radius: 10px;
+                    padding: 0.3rem;
+                    
+                    
+                    color:#f6f5f2;
+                }
+            
+            }
+           
+        }
+
+
+
+    }
+
+        
+    }
+   
+
 
 
 
