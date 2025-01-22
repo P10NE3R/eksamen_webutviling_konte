@@ -135,39 +135,39 @@
                     <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
                     <ul class="navn">
                         <li> <label for="fornavn">FORNAVN (IFØLGE PASS):</label></li>
-                        <li><input type="text" id="fornavn" name="fornavn" required></li>
+                        <li><input type="text" id="fornavn" name="fornavn" autocomplete="given-name" required></li>
                         <li> <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label></li>
-                        <li> <input type="text" id="etternavn" name="etternavn" required></li>
+                        <li> <input type="text" id="etternavn" name="etternavn"  autocomplete="family-name" required></li>
                         
                         
                     </ul>
                     
                     <ul class="valg_av_kjonn">
                         <li class="full_bredde"><p>KJØNN</p></li>
-                        <li><input type="radio" id="kvinne" name="kjonn"></li>
+                        <li><input type="radio" id="kvinne" name="kjonn" required></li>
                         <li><label for="kvinne">KVINNE</label></li>
-                        <li><input type="radio" id="mann" name="kjonn"></li>
+                        <li><input type="radio" id="mann" name="kjonn" required></li>
                         <li><label for="mann">MANN</label></li>
                     </ul>
                    
         
                     <ul class="bursdag">
                         <li class="full_bredde"><label for="birth_date_p1">FØDSELSDATO:</label></li>
-                        <li><input id="birth_date_p1" type="number" name="birth_date" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag"></li>
-                        <li><input id="birth_month_p1" type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned"  required></li>
-                        <li><input id="birth_year_p1" type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år" required></li>
+                        <li><input id="birth_date_p1" type="number" name="birth_date" placeholder="DD" min="1" max="31" autocomplete="bday-day" required ></li>
+                        <li><input id="birth_month_p1" type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned" autocomplete="bday-month"  required></li>
+                        <li><input id="birth_year_p1" type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år" autocomplete="bday-year" required></li>
                     </ul>
 
                     
                     <ul id="adresser">
                         <li> <label for="e-post">E-POSTADRESSE:</label></li>
-                        <li> <input id="e-post" name="e-post" type="text" required></li>
+                        <li> <input id="e-post" name="e-post" type="text" autocomplete="email" required></li>
                         <li><label for="telefonnummer">TELEFONNUMMER:</label></li>
                         <li><input id="telefonnummer" name="telefonnummer" type="number" required></li>
                         <li><label for="postnummer">POSTNUMMER:</label></li>
-                        <li><input id="postnummer" name="postnummer" type="number" required></li>
+                        <li><input id="postnummer" name="postnummer" type="number"  required></li>
                         <li> <label for="poststed">POSTSTED:</label></li>
-                        <li><input id="poststed" name="poststed" type="text" required></li>
+                        <li><input id="poststed" name="poststed" type="text"  required></li>
                         <li> <label for="land">LAND</label></li>
                         <li>
                             <select id="land" required>
@@ -196,31 +196,31 @@
                     <legend>VOKSEN 18+</legend>
                     <ul class="navn">
                         <li> <label for="fornavn_p2">FORNAVN (IFØLGE PASS):</label></li>
-                        <li><input type="text" id="fornavn_p2" name="fornavn" required></li>
+                        <li><input type="text" id="fornavn_p2" name="fornavn" autocomplete="given-name" required></li>
                         <li> <label for="etternavn_p2">ETTERNAVN (IFØLGE PASS):</label></li>
-                        <li> <input type="text" id="etternavn_p2" name="etternavn" required></li>
+                        <li> <input type="text" id="etternavn_p2" name="etternavn"  autocomplete="family-name" required></li>
                         
                         
                     </ul>
                     
                     <ul class="valg_av_kjonn">
                         <li class="full_bredde"><p>KJØNN</p></li>
-                        <li><input type="radio" id="kvinne_p2" name="kjonn_p2"></li>
+                        <li><input type="radio" id="kvinne_p2" name="kjonn_p2" required></li>
                         <li><label for="kvinne_p2">KVINNE</label></li>
-                        <li><input type="radio" id="mann_p2" name="kjonn_p2"></li>
+                        <li><input type="radio" id="mann_p2" name="kjonn_p2" required></li>
                         <li><label for="mann_p2">MANN</label></li>
                     </ul>
                    
         
                     <ul class="bursdag">
                         <li class="full_bredde"><label for="birth_date_p2">FØDSELSDATO:</label></li>
-                        <li><input id="birth_date_p2" type="number" name="birth_date_p2" placeholder="DD" min="1" max="31" aria-label="bursdags dato dag persom 2"></li>
+                        <li><input id="birth_date_p2" type="number" name="birth_date_p2" placeholder="DD" min="1" max="31" required></li>
                         <li><input id="birth_month_p2" type="number" placeholder="MM" name="birth_month" min="1" max="12" aria-label="bursdags dato måned person 2"  required></li>
                         <li><input id="birth_year_p2" type="number" placeholder="ÅÅÅÅ" name="birth_year" min="1900" max="2007" aria-label="bursdags dato år person 2" required></li>
                     </ul>
                 </fieldset>
 
-                <button aria-label="send inn bestilling" type="submit" id ="send_inn">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
+                <button aria-label="send inn bestilling" type="submit" id ="send_inn" > Siste trinn <i class="fa-solid fa-arrow-right" ></i></button>
         </form>
 
            

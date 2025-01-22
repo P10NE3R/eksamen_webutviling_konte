@@ -669,16 +669,82 @@ form{
     
     #hotell_bilder{
         max-height:500px;
+        
+        #arrow_right{
+            position: relative;
+            bottom:9rem ;
+            left: 21rem;
+            color: #e8e8e8;
+            background-color: #252525;
+            opacity: 0.6;
+            padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+            border-radius:20px ;
+            
+        }
+
+
+        #arrow_left{
+            position: relative;
+            bottom:9rem ;
+           
+            color: #e8e8e8;
+            background-color: #252525;
+            opacity: 0.6;
+            padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+            border-radius:20px ;
+            
+        }
+
+        #heart{
+            color: red;
+            background-color: #e8e8e8;
+            padding: 0.5rem;
+            border-radius: 20px;
+            
+            position: relative;
+            bottom:17.5rem ;
+            left: 19rem;
+            
+        }
+
+        ul{
+            display: flex;
+            border-radius: 15px;
+            gap: 0.3rem;
+            background-color: #252525;
+            opacity: 0.6;
+            width: 4rem;
+            padding: 0.4rem 0rem 0.4rem 0rem;
+            margin:0px;
+            justify-content: center;
+            width: 3rem;
+            
+            position: relative;
+            left: 22rem;
+            bottom: 4.3rem;
+            li{
+                font-weight: bold;
+                font-size: small;
+                color: #f6f5f2;
+            }
+
+           
+            
+        }
+
         .scroll-container{
             
             display: flex;
             overflow: scroll;
             
             
+            
             img{
                 max-height: 100%;
                 max-width: 100%;
             }
+
+           
         }
     }
     
@@ -771,11 +837,18 @@ form{
 
     }
 
+    #kart{
+        max-width: 100%;
+
+        iframe{
+            max-width: 100%;
+        }
+    }
+
     #tilgjengelige_rom{
         border-radius: 10px;
-        border:1px solid black;
-        display: flex;
-        flex-wrap: wrap;
+        
+        
 
         gap: 1rem;
 
