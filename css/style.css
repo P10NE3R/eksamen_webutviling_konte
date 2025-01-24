@@ -1000,7 +1000,13 @@ footer{
         #global_header{
             
             nav{
+                
+                
+                section{
+                    ul{
 
+                    }
+                }
                 #tips_hotell_fly{
                     display:block;
                     display: flex;
@@ -1081,7 +1087,8 @@ footer{
             #form_container{
                 max-width: 50%;
             }
-      
+            
+            
       
       
       
@@ -1094,6 +1101,16 @@ footer{
       
         }
     
+        #hotell{
+            #tilgjengelige_rom{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3rem;
+                article{
+                    max-width: 25%;
+                }
+            }
+        }
     
     
     
