@@ -435,6 +435,7 @@ footer{
 
 
 #order{
+    margin-bottom: 2rem;
     nav{
         
 
@@ -462,7 +463,7 @@ footer{
             li{
 
                 a{
-                    color: #e8e8e8;
+                    color: white;
                 }
                 i{
                     font-size: xx-large;
@@ -1002,6 +1003,9 @@ footer{
 
                 #tips_hotell_fly{
                     display:block;
+                    display: flex;
+                    
+                    gap: 1rem;
                 }  
 
             }
@@ -1018,7 +1022,9 @@ footer{
             justify-content: center;
             flex-direction: row-reverse;
             gap:1rem;
+            
             #valg{
+               
                 width: 30%;
                 box-shadow:#e8e8e8 1px 1px 1px 3px;
                 border-radius: 15px;
@@ -1047,6 +1053,7 @@ footer{
                     #valg_pris{
                         color: black;
                     }
+                    
                 }
                 
                 
