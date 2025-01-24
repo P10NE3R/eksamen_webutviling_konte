@@ -977,7 +977,41 @@ footer{
         
     
     @media only screen and (min-width:1000px){
-    
+        footer{
+            display: flex;
+            justify-content: space-between;
+
+
+
+            #betalingsmetoder{
+                max-width:20% ;
+            }
+
+            #sosiale_medier{
+                max-width:20% ;
+            }
+
+            #kundeservice{
+                width: 20%;
+            }
+        }
+        
+        #global_header{
+            
+            nav{
+
+                #tips_hotell_fly{
+                    display:block;
+                }  
+
+            }
+
+
+            
+           
+        }
+        
+
         #order{
             display: flex;
             flex-wrap: wrap;
