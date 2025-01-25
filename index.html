@@ -50,191 +50,194 @@
     
     
     <main id="forside">
-        <header>
-            <section id="banner">
-            </section>
-            
+        <div class="content-container">
+            <header>
+                <section id="banner">
+                </section>
+                
 
-            <section id="search_form">
-                <div class="scroll-container">
-                    <ul>
-                        <li id="fly_og_hotell">
-                            <a href="#searc_form"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a>
-                        </li>
-                        
-                        <li >
-                            <a 
-                                href="https://www.norwegian.no/" target="_blank">
-                                <i class="fa-solid fa-plane">
-                                </i> Fly
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
-                        </li>
-                        
-                        <li id="kombinasjonsreiser">
-                            <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <form action="#" method ="GET">
-                    <label for="reise_fra">Fra</label>
-                    <select name="reise_fra" id="reise_fra">
-                        <option value="OSL">Oslo Lufthavn</option>
-                        <option value="TRF">Torp Sandefjord Lufthavn</option>
-                        <option value="BGO">Bergen Lufthavn</option>
-                        <option value="ALF">Alta Lufthavn</option>
-                    </select>
-                    
-                    <label for="reise_til">Til</label>
-                    <select id="reise_til">
-                        <option value="albania">Albania</option>
-                        <option value="denmark">Danmark</option>
-                        <option value="finland">Finland</option>
-                        <option value="greece">Hellas</option>
-                    </select>
-                    
-                    
-                    
+                <section id="search_form">
+                    <div class="scroll-container">
+                        <ul>
+                            <li id="fly_og_hotell">
+                                <a href="#searc_form"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a>
+                            </li>
                             
-                      
-                    
-                    
-                    <label for="reiselengde">Reiselengde</label>
-                    <select id="reiselengde">
-                        <option value="under 1">Mindre enn 1 uke</option>
-                        <option value="1">1 Uke</option>
-                        <option value="2">2 Uker</option>
-                        <option value="mer enn 2">Mer enn 2 uker</option>
-                    </select>
-                    <label for="dato">Velg dato</label>
-                    <input type="date" id="dato" name="dato">
-                    <label for="antall_reisende">Antall reisende</label>
-                    <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
-    
-                    
-                    <button aria-label="søk på reise" type="submit" id ="sok">Søk</button>
-                    
-    
-                </form>
+                            <li >
+                                <a 
+                                    href="https://www.norwegian.no/" target="_blank">
+                                    <i class="fa-solid fa-plane">
+                                    </i> Fly
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
+                            </li>
+                            
+                            <li id="kombinasjonsreiser">
+                                <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <form action="#" method ="GET">
+                        <label for="reise_fra">Fra</label>
+                        <select name="reise_fra" id="reise_fra">
+                            <option value="OSL">Oslo Lufthavn</option>
+                            <option value="TRF">Torp Sandefjord Lufthavn</option>
+                            <option value="BGO">Bergen Lufthavn</option>
+                            <option value="ALF">Alta Lufthavn</option>
+                        </select>
+                        
+                        <label for="reise_til">Til</label>
+                        <select id="reise_til">
+                            <option value="albania">Albania</option>
+                            <option value="denmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="greece">Hellas</option>
+                        </select>
+                        
+                        
+                        
+                                
+                        
+                        
+                        
+                        <label for="reiselengde">Reiselengde</label>
+                        <select id="reiselengde">
+                            <option value="under 1">Mindre enn 1 uke</option>
+                            <option value="1">1 Uke</option>
+                            <option value="2">2 Uker</option>
+                            <option value="mer enn 2">Mer enn 2 uker</option>
+                        </select>
+                        <label for="dato">Velg dato</label>
+                        <input type="date" id="dato" name="dato">
+                        <label for="antall_reisende">Antall reisende</label>
+                        <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
+        
+                        
+                        <button aria-label="søk på reise" type="submit" id ="sok">Søk</button>
+                        
+        
+                    </form>
+                </section>
+
+                
+
+
+
+            </header>
+            
+            
+            
+            
+            
+            
+            <section id="kampanje">
+            
+                
+
+            <ul>
+                    <li><h3>Bestill sommerens beste uke</h3></li>
+                    <li id="kampanje_tilbu">Fly + hotell, 7 dager</li>
+                    <li id="kampanje_pris">Fra 3 298,-</li>
+            </ul>
+            
+            <a href="order.html">Bestill i dag</a>
             </section>
-
             
-
-
-
-        </header>
-        
-        
-        
-        
-        
-        
-        <section id="kampanje">
-          
             
+            <section id="tilbud">
+                <div class=scroll-container>
+                        
+                        <article >
+                            <h3>
+                                Få eksklusive tilbud
+                            </h3>
+                            <a href="order.html">Logg inn/opprett konto og få rabattkoder <i class="fas fa-angle-double-right"></i></a>
+                        </article>
 
-           <ul>
-                <li><h3>Bestill sommerens beste uke</h3></li>
-                <li id="kampanje_tilbu">Fly + hotell, 7 dager</li>
-                <li id="kampanje_pris">Fra 3 298,-</li>
-           </ul>
-           
-           <a href="order.html">Bestill i dag</a>
-        </section>
-        
-        
-        <section id="tilbud">
-            <div class=scroll-container>
+                        <article >
+                            <h3>
+                                Billige resteplasser
+                            </h3>
+                            <a href="order.html">Opp til 50% rabatt <i class="fas fa-angle-double-right"></i></a>
+                        </article>
+
+
+                        <article >
+                            <h3>
+                                Mars - spar opptil 5000,-
+                            </h3>
+                            <a href="order.html">Sikre deg et feriekupp <i class="fas fa-angle-double-right"></i></a>
+                        </article>
+                </div>
+            </section>
+            
+            
+            
+            
+            <section id="tips_og_inspirasjon">
+                <h2>Tips & inspirasjon</h2>
+                <article>
                     
-                    <article >
-                        <h3>
-                            Få eksklusive tilbud
-                        </h3>
-                        <a href="order.html">Logg inn/opprett konto og få rabattkoder <i class="fas fa-angle-double-right"></i></a>
-                    </article>
+                    <img src="bilder/beach-6514331_640.jpg" alt="bilde av strand i hellas">
+                    <h4>Ukens deal</h4>
+                    <h3>Greske favoritter</h3>
+                    <p>Akkurat nå får du 1000,- i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avreiser i sommer 2025. Kampanjen er gyldig i peropden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
+                    <a href="order.html">Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></a>
 
-                    <article >
-                        <h3>
-                            Billige resteplasser
-                        </h3>
-                        <a href="order.html">Opp til 50% rabatt <i class="fas fa-angle-double-right"></i></a>
-                    </article>
+                </article>
 
+                <article>
+                    <img src="bilder/beach-1836467_640.jpg" alt="bilde av en strand med personer som løper ut i vannet">
+                    <h3>Solskinnspriser - bestill i dag!</h3>
+                    <p>Spar oppptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke idag!</p>
+                    <a href="order.html">Fra kr 3 203 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
 
-                    <article >
-                        <h3>
-                            Mars - spar opptil 5000,-
-                        </h3>
-                        <a href="order.html">Sikre deg et feriekupp <i class="fas fa-angle-double-right"></i></a>
-                    </article>
-            </div>
-        </section>
-        
-        
-        
-        
-        <section id="tips_og_inspirasjon">
-            <h2>Tips & inspirasjon</h2>
-            <article>
                 
-                <img src="bilder/beach-6514331_640.jpg" alt="bilde av strand i hellas">
-                <h4>Ukens deal</h4>
-                <h3>Greske favoritter</h3>
-                <p>Akkurat nå får du 1000,- i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avreiser i sommer 2025. Kampanjen er gyldig i peropden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
-                <a href="order.html">Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></a>
-
-            </article>
-
-            <article>
-                <img src="bilder/beach-1836467_640.jpg" alt="bilde av en strand med personer som løper ut i vannet">
-                <h3>Solskinnspriser - bestill i dag!</h3>
-                <p>Spar oppptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke idag!</p>
-                <a href="order.html">Fra kr 3 203 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            
-            <article id="storby">
-                <img src="bilder/cathedral-427997_640.jpg" alt="bilde av barcelona med sagrada família kirken i bakgrunn">
-                <h3>Storbyferie</h3>
-                <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nye utvalgte hotell.</p>
-                <a href="order.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            
-            <article>
-                <img src="bilder/building-7014904_640.jpg" alt="bilde av london bridge">
-                <h3>Besøk påskefavoritten London</h3>
-                <p>London er en av de mest populære reisemålene i påsken, kjent for sin unike blanding av historie, kultur og moerne opplevlser.</p>
-                <a href="order.html">Fra kr 2 150 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-
-            <article id="ski">
+                <article id="storby">
+                    <img src="bilder/cathedral-427997_640.jpg" alt="bilde av barcelona med sagrada família kirken i bakgrunn">
+                    <h3>Storbyferie</h3>
+                    <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nye utvalgte hotell.</p>
+                    <a href="order.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
                 
-                <img src="bilder/ski-slope-3223709_640.jpg" alt="bilde av person som kjører slalom med skiheiser i bakgrunnen">
-                <h4>Nyhet</h4>
-                <h3>Skiferie</h3>
-                <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her , og det betyr at skissesongen er i full gang!</p>
-                <a href="order.html">Se alle skistedene <i class="fa-solid fa-arrow-right"></i> </a>
-            </article>
+                <article>
+                    <img src="bilder/building-7014904_640.jpg" alt="bilde av london bridge">
+                    <h3>Besøk påskefavoritten London</h3>
+                    <p>London er en av de mest populære reisemålene i påsken, kjent for sin unike blanding av historie, kultur og moerne opplevlser.</p>
+                    <a href="order.html">Fra kr 2 150 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
 
 
-            <article>
-                <img src="bilder/beach-666122_640.jpg" alt="">
-                <h3>Spar opptil 7000,- til sommer</h3>
-                <p>Drømmer du om solfylte dager og eksotiske opplevlerser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
-                <a href="order.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
+                <article id="ski">
+                    
+                    <img src="bilder/ski-slope-3223709_640.jpg" alt="bilde av person som kjører slalom med skiheiser i bakgrunnen">
+                    <h4>Nyhet</h4>
+                    <h3>Skiferie</h3>
+                    <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her , og det betyr at skissesongen er i full gang!</p>
+                    <a href="order.html">Se alle skistedene <i class="fa-solid fa-arrow-right"></i> </a>
+                </article>
+
+
+                <article>
+                    <img src="bilder/beach-666122_640.jpg" alt="">
+                    <h3>Spar opptil 7000,- til sommer</h3>
+                    <p>Drømmer du om solfylte dager og eksotiske opplevlerser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
+                    <a href="order.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
 
 
 
 
 
-        </section>
+            </section>
+        </div>
     </main>
+    
     <footer>
        
         <section class="flagg">

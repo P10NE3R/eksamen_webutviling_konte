@@ -190,7 +190,7 @@ footer{
             grid-column-end:2 ;
 
             background-image: url("../bilder/sea-4768869_1920.jpg");
-            
+            background-size: cover;
         }
 
         #search_form{
@@ -1401,12 +1401,60 @@ footer{
 
 
 
-        #index{
+        #forside{
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            
             header{
                 #search_form{
                     min-width: 100%;
                 }
             }
+
+            .content-container{
+                max-width: 1000px;
+                
+                #tilbud{
+                    display: block;
+                    display: flex;
+
+                    max-width: 100%;
+                    .scroll-container{
+                        display: contents;
+                        max-width: 100%;
+                       article{
+                            display: block;    
+                            padding: 0rem;
+                            max-width: 25%;
+                            h3{
+                                max-width: 70%;
+                            }
+                            
+                       }
+                    }
+                }
+            
+                #tips_og_inspirasjon{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:1rem;
+                    
+                    h2{
+                        width: 100%;
+                    }
+                    article{
+                        max-width: 30%;
+                    }
+                    
+                    
+                }
+            }
+
+
+           
         }
     
     
