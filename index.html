@@ -50,7 +50,7 @@
     
     
     <main id="forside">
-        <div class="content-container">
+        
             <header>
                 <section id="banner">
                 </section>
@@ -70,9 +70,15 @@
                                     </i> Fly
                                 </a>
                             </li>
-                            
+                        
+                           
+
                             <li>
                                 <a href="#storby"><i class="fa-solid fa-city"></i> Storby</a>
+                            </li>
+
+                            <li>
+                                <a href="#ski"><i class="fa-solid fa-skiing"></i> Ski</a>
                             </li>
                             
                             <li id="kombinasjonsreiser">
@@ -82,21 +88,58 @@
                         </ul>
                     </div>
                     <form action="#" method ="GET">
-                        <label for="reise_fra">Fra</label>
-                        <select name="reise_fra" id="reise_fra">
-                            <option value="OSL">Oslo Lufthavn</option>
-                            <option value="TRF">Torp Sandefjord Lufthavn</option>
-                            <option value="BGO">Bergen Lufthavn</option>
-                            <option value="ALF">Alta Lufthavn</option>
-                        </select>
                         
-                        <label for="reise_til">Til</label>
-                        <select id="reise_til">
-                            <option value="albania">Albania</option>
-                            <option value="denmark">Danmark</option>
-                            <option value="finland">Finland</option>
-                            <option value="greece">Hellas</option>
-                        </select>
+                        <ul>
+                            <li><label for="reise_fra">Fra</label></li>
+                            <li> 
+                                <select name="reise_fra" id="reise_fra">
+                                    <option value="OSL">Oslo Lufthavn</option>
+                                    <option value="TRF">Torp Sandefjord Lufthavn</option>
+                                    <option value="BGO">Bergen Lufthavn</option>
+                                    <option value="ALF">Alta Lufthavn</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                        
+                       
+                        
+                       
+                        
+                        
+                        <ul>
+                            <li> <label for="reise_til">Til</label></li>
+                            <li>
+                                <select id="reise_til">
+                                    <option value="albania">Albania</option>
+                                    <option value="denmark">Danmark</option>
+                                    <option value="finland">Finland</option>
+                                    <option value="greece">Hellas</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                        <ul id="duration_list">
+                            <li><label for="reiselengde">Reiselengde</label></li>
+                            <li>
+                                <select id="reiselengde">
+                                    <option value="under 1">Mindre enn 1 uke</option>
+                                    <option value="1">1 Uke</option>
+                                    <option value="2">2 Uker</option>
+                                    <option value="mer enn 2">Mer enn 2 uker</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                        <ul id="date_list">
+                            <li><label for="dato">Velg dato</label></li>
+                            <li><input type="date" id="dato" name="dato"></li>
+                        </ul>
+                        
+                        <ul>
+                            <li><label for="antall_reisende">Antall reisende</label></li>
+                            <li><input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2"></li>
+                        </ul>
                         
                         
                         
@@ -104,17 +147,12 @@
                         
                         
                         
-                        <label for="reiselengde">Reiselengde</label>
-                        <select id="reiselengde">
-                            <option value="under 1">Mindre enn 1 uke</option>
-                            <option value="1">1 Uke</option>
-                            <option value="2">2 Uker</option>
-                            <option value="mer enn 2">Mer enn 2 uker</option>
-                        </select>
-                        <label for="dato">Velg dato</label>
-                        <input type="date" id="dato" name="dato">
-                        <label for="antall_reisende">Antall reisende</label>
-                        <input type="number" id="antall_reisende" name="antall_reisende" min="1" max="10" placeholder="2">
+                        
+                        
+                        
+                       
+                      
+                       
         
                         
                         <button aria-label="søk på reise" type="submit" id ="sok">Søk</button>
@@ -128,7 +166,7 @@
 
 
             </header>
-            
+            <div class="content-container">  
             
             
             
@@ -249,7 +287,7 @@
                 <li><img src="flagg/norway.png" alt="norsk flagg"></li>
                 <li>Norge</li>
                 <li><img src="flagg/material.png" alt="finsk flagg"></li>
-                <li>Soumi</li>
+                <li><span lang="fi">Soumi</span></li>
                 <li><img src="flagg/netherlands.png" alt="nederlandsk flagg"></li>
                 <li>Nederland</li>
 
@@ -286,7 +324,7 @@
 
                 </form>
 
-                <a href="order.html">Kjøp reisegavekort</a>
+                <a href="#">Kjøp reisegavekort</a>
 
             
             <ul>
@@ -298,9 +336,9 @@
         <section id="kundeservice">
             <h3>KUNDESERVICE</h3>
             <ul>
-                <li><a href="#footer">Spørsmål og Svar</a></li>
-                <li><a href="#footer">Chat</a></li>
-                <li><a href="#footer">Kontakt</a></li>
+                <li><a href="#">Spørsmål og Svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
                 <li><a href="tilgjegelighetserklæring.xlsx">Tilkjengelighetsærklering</a></li>
             </ul>
         </section>
@@ -310,11 +348,11 @@
             <ul>
                 
                 
-                <li><a href="https://www.instagram.com" target="_blank"><i  class="fa-brands fa-instagram" aria-label="lenke til vår instagram side"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i  class="fa-brands fa-facebook" aria-label="lenke til vår facebook side"></i></a></li>
-                <li><a href="https://www.pinterest.com" target="_blank"><i  class="fa-brands fa-pinterest-p" aria-label="lenke til vår pintrest side"></i></a></li>
-                <li><a href="https://www.tiktok.com" target="_blank"><i  class="fa-brands fa-tiktok" aria-label="lenke til vår tiktok side"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><i  class="fa-brands fa-youtube" aria-label="lenke til vår youtube side"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i  class="fa-brands fa-instagram" aria-label="Dette er en lenke til vår facebook-side"> </i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i  class="fa-brands fa-facebook" aria-label="Dette er en lenke til vår instagram-side"></i></a></li>
+                <li><a href="https://www.pinterest.com" target="_blank"><i  class="fa-brands fa-pinterest-p" aria-label="Dette er en lenke til vår pinterest-side"></i></a></li>
+                <li><a href="https://www.tiktok.com" target="_blank"><i  class="fa-brands fa-tiktok" aria-label="Dette er en lenke til vår tiktok-side"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i  class="fa-brands fa-youtube" aria-label="Dette er en lenke til vår youtube-side"></i></a></li>
                 
             </ul>
         </section>
