@@ -1093,6 +1093,10 @@ footer{
                         font-weight: bold;
                         font-size: smaller;
                     }
+                    #magnifying_glass{
+                        color: black;
+                        border: none;
+                    }
                    }
                 }
                 
