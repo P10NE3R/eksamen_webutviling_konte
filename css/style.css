@@ -650,7 +650,28 @@ footer{
         .bursdag{
             display: flex;
             flex-wrap: wrap;
-            gap:1rem;
+            justify-content: space-between;
+            
+            .full_bredde{
+                display: flex;
+                justify-content: space-between; 
+            }
+                
+                .birth_day{
+                    width: 9rem;
+                  
+                }
+            
+                .birth_month{
+                    min-width: 7rem;
+                    
+                }
+
+                .birth_year{
+                    min-width: 5rem;
+                }
+           
+
             
 
             input{
@@ -659,7 +680,15 @@ footer{
                 border: none;
                 background-color: white;
                 box-shadow:#e8e8e8 0px 2px 2px;
-        }
+                
+                
+
+        
+            }
+            
+
+
+
         }
 
 
