@@ -27,6 +27,11 @@ body, main,html{
         align-items: center;
         justify-content: space-between;
         
+
+        #show_desktop{
+            display: none;
+        }
+
         img{
         width: 5rem;
         }
@@ -1029,10 +1034,26 @@ footer{
                 display: block;
                 display: flex;
 
-                section{
-                    min-width: 90%;
-
+                #show_mobile{
+                    display: none;
                 }
+                #show_desktop{
+                    
+                    display: contents;
+                    display: flex;
+                   ul{
+                    align-items: center;
+                    a{
+                        border:solid 2px #1ca2c1;
+                        border-radius: 20px;
+                        padding: 0.5rem;
+                        color: #1ca2c1;
+                        font-weight: bold;
+                    }
+                   }
+                }
+                
+                
                 
                #logo_lenker_desktop{
                 width: 100%;
