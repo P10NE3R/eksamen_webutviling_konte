@@ -1483,6 +1483,15 @@ footer{
                 gap: 3rem;
                 article{
                     max-width: 25%;
+                    
+                    .rominfo{
+                        .rominfo_styling{
+                            list-style: none;
+                            
+                        }
+                    }
+                    
+                    
                 }
             }
             
@@ -1614,21 +1623,22 @@ footer{
                     justify-content: space-between;
                     .scroll-container{
                         display: contents;
-                        gap: block;
+                        gap: unset;
                         display: block;
                         display: flex;
-                       
-                        
+                       gap:1.3rem;
+                        justify-content: space-between;
                        
                         max-width: 100%;
                         article{
                             min-width: unset;
-
+                            width: 20rem;
                             padding: 0rem;
-                            max-width: 50%;
+                            max-width: 30%;
                             h3, a{
                                 max-width: 70%;
                                 padding-left:1rem ;
+                                
                             }
                             
                        }
@@ -1639,8 +1649,9 @@ footer{
                     display: block;
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap:unset;
                     
-                    gap:1rem;
                     margin: 0rem 0rem 0rem 0rem;
                     min-width: 100%;
                     h2{
