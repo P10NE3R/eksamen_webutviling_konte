@@ -938,7 +938,7 @@ footer{
             
 
             .rominfo{
-                font-weight: 100;
+                
                 list-style: disc;
                 gap: 1.5rem;
 
@@ -959,10 +959,11 @@ footer{
             
         
             .prisinfo{
-                font-weight: 100;
+                
                 
                 li{
                     margin-top: 0.3rem;
+                    font-weight: m;
                 }
                
                 .pris{
