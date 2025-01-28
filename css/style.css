@@ -1029,16 +1029,41 @@ footer{
         }
         
         #global_header{
-            
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
             nav{
+                
                 display: block;
                 display: flex;
+                flex-wrap: wrap;
+                
+
+                section{
+                    height: fit-content;
+                    display: contents;
+                    width: 100%;
+                    justify-content: right;
+                    #tips_hotell_fly{
+                        margin: 0px;
+                        
+                        li{
+                            a{
+                                font-size: large;
+                                font-weight: bold;
+                            }
+                        }
+                        
+
+                    }
+                    
+                }
 
                 #show_mobile{
                     display: none;
                 }
                 #show_desktop{
-                    
+                   
                     display: contents;
                     display: flex;
                    ul{
@@ -1049,6 +1074,7 @@ footer{
                         padding: 0.5rem;
                         color: #1ca2c1;
                         font-weight: bold;
+                        font-size: smaller;
                     }
                    }
                 }
