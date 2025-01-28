@@ -655,6 +655,7 @@ footer{
             .full_bredde{
                 display: flex;
                 justify-content: space-between; 
+                max-width: 96%;
             }
                 
                 .birth_day{
