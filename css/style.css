@@ -1,6 +1,6 @@
 *{
     font-family: "Montserrat", Helvetica, sans-serif;
-    line-height:1.25rem ;
+    
     a{
         text-decoration: none;
         color: black;
@@ -17,6 +17,12 @@ body, main,html{
     margin: 0px;
     border:0px
 }
+
+
+body{
+    max-width: 1400px;
+}
+
 
 #global_header{
    
@@ -514,9 +520,9 @@ footer{
     }
 
     #valg{
-        article{
+       #valg_desktop{
             display: none;
-        }
+       }
         
         details{
             border-radius: 10px;
@@ -543,6 +549,17 @@ footer{
             img{
                 border-radius: 10px;
                 max-width: 100%;
+            }
+            #valg_ny_pris{
+                font-weight: 600;
+                font-size: large;
+                color: red;
+            }
+
+            #gammel_pris{
+                color: rgb(82, 82, 82);
+                
+                text-decoration: line-through;
             }
         
             .valg_info{
@@ -698,7 +715,7 @@ footer{
 
 
     }
-    }
+}
    
    
 #hotell{
@@ -1129,6 +1146,10 @@ footer{
                     border-radius: 15px;
                     height: fit-content;    
                     
+                    #valg_desktop{
+                        display: block;
+                    }
+
                     article{
                         
                         display: block;
@@ -1581,20 +1602,25 @@ footer{
                 }
 
                 #tilbud{
-                    display: block;
+                    display: contents;
                     display: flex;
-                    
+                    flex-wrap: wrap;
                     max-width: 100%;
+                    justify-content: space-between;
                     .scroll-container{
                         display: contents;
+                        gap: block;
+                        display: block;
+                        display: flex;
+                       
+                        
+                       
                         max-width: 100%;
-                       article{
-                            display: block;  
-                            
-                           
-                            
+                        article{
+                            min-width: unset;
+
                             padding: 0rem;
-                            max-width: 20%;
+                            max-width: 50%;
                             h3, a{
                                 max-width: 70%;
                                 padding-left:1rem ;
